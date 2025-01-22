@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Tool": {
+      "commandName": "Project",
+      "commandLineArgs": "pgurl postgres://postgres:yGtdxGjZKLMsL2a@flywebpgdata.flycast:5432\r\n"
+    }
+  }
+}
