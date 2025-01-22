@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreTest", "CoreTest\CoreTest.csproj", "{1330DAFE-3EAA-4371-8724-DF38AB02508C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{516C95B4-7B4D-4F67-BD35-FD2F3DA55C01}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-test.yml = .github\workflows\build-test.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tool", "Tool\Tool.csproj", "{CA5CB26B-2056-464C-94C8-3E0DEC2A6185}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,10 @@ Global
 		{1330DAFE-3EAA-4371-8724-DF38AB02508C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1330DAFE-3EAA-4371-8724-DF38AB02508C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1330DAFE-3EAA-4371-8724-DF38AB02508C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5CB26B-2056-464C-94C8-3E0DEC2A6185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5CB26B-2056-464C-94C8-3E0DEC2A6185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5CB26B-2056-464C-94C8-3E0DEC2A6185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5CB26B-2056-464C-94C8-3E0DEC2A6185}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
