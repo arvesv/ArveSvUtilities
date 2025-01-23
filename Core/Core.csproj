@@ -9,7 +9,7 @@
     <Authors>ArveSv</Authors>
     <Description>A reusable library of utility functions for my projects.</Description>
     <RepositoryUrl>https://github.com/arvesv/ArveSvUtilities</RepositoryUrl>
-    <PackageLicenseExpression>GPL-2.0-or-later</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT<PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
