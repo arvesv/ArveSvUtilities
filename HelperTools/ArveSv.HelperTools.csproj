@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>ArveSv.Helpertools.250123.1</PackageId>
+    <PackageId>ArveSv.Helpertools</PackageId>
     <Version>1.0.0</Version>
     <Authors>Arve Svendsen</Authors>
     <Description>A reusable library of utility functions for my projects.</Description>
