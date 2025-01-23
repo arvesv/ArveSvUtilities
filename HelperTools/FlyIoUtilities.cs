@@ -1,6 +1,6 @@
 ﻿using Npgsql;
 
-namespace Core;
+namespace ArveSv.HelperTools;
 
 public static class FlyIoUtilities
 {
