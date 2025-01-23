@@ -1,6 +1,6 @@
-﻿using Core;
+﻿using ArveSv.HelperTools;
 
-namespace CoreTest;
+namespace ArveSv.HelperTools.Test;
 
 public class TestFlyIoUtilities
 {
