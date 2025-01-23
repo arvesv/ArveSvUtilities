@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\ArveSv.HelperTools.csproj" />
+    <ProjectReference Include="..\HelperTools\ArveSv.HelperTools.csproj" />
   </ItemGroup>
 
 </Project>
