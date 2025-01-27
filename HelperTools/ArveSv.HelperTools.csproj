@@ -7,7 +7,7 @@
     <PackageId>ArveSv.HelperTools</PackageId>
     <Version>1.0.0</Version>
     <Authors>Arve Svendsen</Authors>
-    <Description>A reusable library that I need in my other projects</Description>
+    <Description>A reusable library that I need in for other projects</Description>
     <RepositoryUrl>https://github.com/arvesv/HelperTools</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
