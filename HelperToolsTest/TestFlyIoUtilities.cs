@@ -9,7 +9,7 @@ public class TestFlyIoUtilities
     {
         var pgUrl = "postgres://user:password@localhost:5432/dbname";
         var connectionString = FlyIoUtilities.ConvertPostgresUrlToConnectionString(pgUrl);
-        await Assert.That(connectionString).IsEqualTo("Host=localhost;Port=5432;Username=user;Password=password;Database=dbname;SSL Mode=Require");
+        await Assert.That(connectionString).IsEqualTo("Host=localhost;Port=5432;Username=user;Password=password;Database=dbname");
     }
 
     [Test]
@@ -17,7 +17,14 @@ public class TestFlyIoUtilities
     {
         var pgUrl = "postgres://bruker:passord@dbserver:9876/databasenavn";
         var connectionString = FlyIoUtilities.ConvertPostgresUrlToConnectionString(pgUrl);
-        await Assert.That(connectionString).IsEqualTo("Host=dbserver;Port=9876;Username=bruker;Password=passord;Database=databasenavn;SSL Mode=Require");
+        await Assert.That(connectionString).IsEqualTo("Host=dbserver;Port=9876;Username=bruker;Password=passord;Database=databasenavn");
     }
 
+    [Test]
+    public async Task TestConvertPostgresUrlToConnectionWithSslDisable()
+    {
+        var pgUrl = "postgres://bruker:passord@dbserver:9876/databasenavn?sslmode=disable";
+        var connectionString = FlyIoUtilities.ConvertPostgresUrlToConnectionString(pgUrl);
+        await Assert.That(connectionString).IsEqualTo("Host=dbserver;Port=9876;Username=bruker;Password=passord;Database=databasenavn;SSL Mode=Disable");
+    }
 }

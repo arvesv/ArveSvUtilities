@@ -14,8 +14,13 @@ public static class FlyIoUtilities
             Username = uri.UserInfo.Split(':')[0],
             Password = uri.UserInfo.Split(':')[1],
             Database = uri.LocalPath.TrimStart('/'),
-            SslMode = SslMode.Require
         };
+
+        if (uri.Query.IndexOf("sslmode=disable", StringComparison.OrdinalIgnoreCase) >= 0)
+        {
+            builder.SslMode = SslMode.Disable;
+        }
+
         return builder.ToString();
     }
 }

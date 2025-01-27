@@ -4,11 +4,11 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>ArveSv.Helpertools</PackageId>
-    <Version>1.0.0</Version>
+    <PackageId>ArveSv.HelperTools</PackageId>
+    <Version>1.0.1</Version>
     <Authors>Arve Svendsen</Authors>
-    <Description>A reusable library of utility functions for my projects.</Description>
-    <RepositoryUrl>https://github.com/arvesv/ArveSvUtilities</RepositoryUrl>
+    <Description>A reusable library that I need in for other projects</Description>
+    <RepositoryUrl>https://github.com/arvesv/HelperTools</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
