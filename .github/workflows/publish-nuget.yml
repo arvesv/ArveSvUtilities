@@ -2,6 +2,10 @@ name: Publish NuGet Package
 
 on:
    workflow_dispatch:
+   push:
+    tags:
+      - 'v*'
+
 
 
 jobs:
@@ -31,6 +35,10 @@ jobs:
 
     - name: Publish to GitHub Packages
       run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+      working-directory: HelperTools
+
+    - name: Publish to nuget.arvesv.com
+      run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.ARVESVNUGETKEY }} --source  https://nuget.arvesv.com/v3/index.json 
       working-directory: HelperTools
 
 
